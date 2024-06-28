@@ -1,0 +1,9 @@
+body{
+    background-color: #008dd9;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: 'Lobster Two', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

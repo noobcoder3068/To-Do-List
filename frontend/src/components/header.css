@@ -1,0 +1,31 @@
+.header {
+  margin-top: 10px;
+  background-color: #1d9dd9;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  height: auto; /* Adjusted to accommodate variable content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative; /* Ensures absolute positioning inside this container */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #ffffffb3; 
+}
+
+.author {
+  position: absolute;
+  bottom: 0px;
+  right: 720px;
+  font-size: 1rem;
+  color: #ffffffb3; 
+  text-align: right; /* Aligns the text to the right */
+}
