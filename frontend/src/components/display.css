@@ -36,7 +36,7 @@
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  resize: none; /* Prevents resizing */
+  resize: none;
 }
 
 button {
@@ -102,8 +102,71 @@ button.edit:hover {
   color: white;
 }
 
-.deledit{
+.deledit {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .note {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .note {
+    width: 280px;
+  }
+
+  .editarea {
+    padding: 10px;
+  }
+
+  .edit-input,
+  .edit-textarea {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .note {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .editarea {
+    padding: 8px;
+  }
+
+  .edit-input,
+  .edit-textarea {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .note {
+    width: 95%;
+    margin: 8px auto;
+  }
+
+  .editarea {
+    padding: 6px;
+  }
+
+  .edit-input,
+  .edit-textarea {
+    padding: 5px;
+  }
+
+  button {
+    height: 25px;
+    width: 25px;
+  }
+
+  button:hover {
+    background: #147fb1;
+    color: white;
+  }
 }

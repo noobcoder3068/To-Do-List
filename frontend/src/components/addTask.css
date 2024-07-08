@@ -1,30 +1,64 @@
-/* src/components/CreateArea.css */
 .create-area {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.create-note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 8px #ccc;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-note input,
+.create-note textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1200px) {
   .create-note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 5px 8px #ccc;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px; /* Adjust this value to change the width */
-    display: flex;
-    flex-direction: column;
+    max-width: 600px;
   }
-  
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .create-note {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .create-note {
+    width: 90%;
+    padding: 15px;
+  }
+
   .create-note input,
   .create-note textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-family: 'Poppins', sans-serif;
+    padding: 8px;
   }
-  
-  
+}
+
+@media (max-width: 480px) {
+  .create-note {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .create-note input,
+  .create-note textarea {
+    padding: 6px;
+    margin: 3px 0;
+  }
+}

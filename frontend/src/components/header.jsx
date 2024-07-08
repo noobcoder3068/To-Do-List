@@ -27,7 +27,7 @@ function Header() {
   return (
     <header className="header">
       <h1><AssignmentIcon className="icon"/> To Do List</h1>
-      <p className="tagline">" Hello Sim :) "</p>
+      <p className="tagline">" Let's Get Our Task Done :) "</p>
       {/* <p className="author">-{quote.author}</p> */}
 
     </header>

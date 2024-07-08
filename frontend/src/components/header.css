@@ -4,10 +4,10 @@
   color: white;
   padding: 16px;
   text-align: center;
-  height: auto; /* Adjusted to accommodate variable content */
+  height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  position: relative; /* Ensures absolute positioning inside this container */
+  position: relative;
 }
 
 .header h1 {
@@ -18,14 +18,86 @@
 .tagline {
   margin-top: 5px;
   font-size: 1.2rem;
-  color: #ffffffb3; 
+  color: #ffffffb3;
 }
 
 .author {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   right: 720px;
   font-size: 1rem;
-  color: #ffffffb3; 
-  text-align: right; /* Aligns the text to the right */
+  color: #ffffffb3;
+  text-align: right;
+}
+
+@media (min-width: 1200px) {
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    font-size: 1.4rem;
+  }
+
+  .author {
+    right: 700px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .header {
+    padding: 14px;
+  }
+
+  .header h1 {
+    font-size: 2.3rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .author {
+    right: 300px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .author {
+    right: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .author {
+    right: 10px;
+    font-size: 0.8rem;
+  }
 }
